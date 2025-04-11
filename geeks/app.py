@@ -2,6 +2,9 @@ import streamlit as st
 import datetime
 import io
 import zipfile
+import os
+os.environ["MOCK_OLLAMA"] = "true"
+
 from agents import (
     UsecaseAgent, SchemaAgent, MappingAgent,
     CertifierAgent, ChatbotAgent, SentimentAgent
